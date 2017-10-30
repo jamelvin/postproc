@@ -1,0 +1,36 @@
+# directory of data (relative to runtime location; example: data/DNS_256)
+ /workspace/jmelvin/DNS_HIT512
+# Output directory / prefix name (example: results/DNS_256)
+ tempOutput/test
+# format of file (dat or h5)
+h5
+# datastyle of file (complex or real)
+complex
+# Nx, Ny, Nz
+512,512,512
+# n times filter (fx,fy,fz)
+2,4,2
+# n times pi box size (Lx,Ly,Lz)
+2.0,2.0,2.0
+# apply finite volume filter?
+.FALSE.
+# apply down sampling?
+.FALSE.
+# Box(0) or ellipsoid filter (1) for 1D spectra?
+1
+# start file number
+0000
+# finish file number
+0000
+# step size
+2000
+# Calculate dissipation rate? (0: read from file, 1: Calculate from field, 2: Use value below)
+ 1
+# Predefined dissipation rate (Only used if option above is set to 2)
+ 1.244
+# Export data as real field?
+.FALSE.
+# Squeeze or stretch the field?
+.TRUE.
+# How would like to squeeze or stretch (Sx, Sy, Sz)
+2.0,4.0,2.0
